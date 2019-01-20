@@ -468,9 +468,9 @@ void captivePortal() {
   WiFiManagerParameter telegramLabel("<p>Telegram token</p>");
   WiFiManagerParameter telegramToken("Telegram", "Token", token.c_str(), 50);
   WiFiManagerParameter checkTempLabel("<p>Tempo di controllo accensione (s)</p>");
-  WiFiManagerParameter checkTempSec("tempoFumi", "Controllo Fumi", "1200", 50);
-  WiFiManagerParameter valueTempLabel("<p>Setpoint controllo temperatura fumi (°C)</p>");
-  WiFiManagerParameter valueTemp("setpoint", "Temperatura fumi", "80", 50);
+  WiFiManagerParameter checkTempSec("tempoFumi", "Controllo Acqua", "1200", 50);
+  WiFiManagerParameter valueTempLabel("<p>Setpoint controllo temperatura acqua (°C)</p>");
+  WiFiManagerParameter valueTemp("setpoint", "Temperatura acqua", "80", 50);
 
   wifiManager.addParameter(&telegramLabel);
   wifiManager.addParameter(&telegramToken);
