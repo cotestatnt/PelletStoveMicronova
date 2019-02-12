@@ -3,7 +3,7 @@
 #include <DNSServer.h>
 #include <ESP8266WebServer.h>
 
-#include <ArduinoJson.h>
+#include <ArduinoJson.h>        //https://github.com/bblanchon/ArduinoJson
 #include <WiFiManager.h>        //https://github.com/tzapu/WiFiManager
 #include <CTBot.h>              //https://github.com/shurillu/CTBot
 
@@ -29,7 +29,6 @@ la risposta è così composta:
 - un byte di CRC, come sommatoria fra i due byte di cui sopra ed il byte di valore restituito (vedi sotto), in modulo FFh
 - un byte contenente il valore richiesto
  */
-
 
 #define ParStoveStatus 0x21
  /* (0 - off, 1 - starting, 2 - load pellet, 3 - flame light, 4 - work, 5 - cleaning, 6 - off, 7 - cleaning final) */
